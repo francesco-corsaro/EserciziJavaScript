@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>Come funzionano gli script</h2>
+<p>Le variabili JavaScript sono contenitori per la memorizzazione di valori di dati.
+
+In questo esempio, x, y, e z, sono variabili:</p>
+<p id="demo"></p>
+
+<script>
+var x, y, z;  // dichiaro quali variabili utilizzo. Il segno ; (punto e virgola) separa gli statement
+x = 5;    // Attribuisco un statement (istruzione)  ad ogni variabile
+y = 6;    // Il simbolo = serve per assegnare un valore; L'operatore uguale si scrive ==(due uguale	)
+z = x + y;  // Statement 
+
+document.getElementById("demo").innerHTML =
+"The value of z is " + z + ".";  //Da notare che la variabile è separata dal segno +
+</script>
+
+<p id="demo"></p>
+
+<script> // in questo esempio la keyword var è inserita insieme alla variabile
+var price1 = 8;
+var price2 = 9;
+var total = price1 + price2;
+document.getElementById("demo").innerHTML =
+"The total is: " + total;
+</script>
+<p id="allerta"></p>
+<script>
+	var r="wow";
+	alert(r);
+</script>
+
+<h3>{Funzioni} dentro una funzione</h3>
+<!-- cliccando il bottone vengono eseguite due funzioni -->
+<button type="button" onclick="myFunction()">Click Me!</button> 
+
+<p id="demo1"></p> <!-- Qui viene inserito il teso di demo 1 -->
+<p id="demo2"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo1").innerHTML = "Ciao Bambola!";
+  document.getElementById("demo2").innerHTML = "come stai?";
+}
+</script>
+</body>
+</html>
